@@ -1,32 +1,107 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h1{
+  font-size: 3em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select-time{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.select-time h3{
+  margin: 0px 0px 12px 0px;
+}
+
+.select-time div{
+  background-color: rgba(0, 128, 0, 0.473);
+  margin: 0px 24px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.select-time .break{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.select-time .session{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.select-time p{
+  display: inline;
+  margin: 0px 12px;
+  font-weight: 700;
+  font-size: 2em;
+  width: 2vw;
+}
+
+.select-time i{
+  transition: all 0.2s;
+}
+
+.select-time i:hover{
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* TIMER */
+
+.timer{
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  margin: 12px 0px;
+}
+
+.time{
+  display: inline-block;
+  background-color: rgba(187, 187, 187, 0.212);
+  width: 35vw;
+  padding: 0px 24px;
+  border-radius: 8px;
+  border: solid 2px rgba(255, 255, 255, 0.479);
+  font-size: 1.4em;
+}
+
+.time h2{
+  font-family: 'Orbitron';
+}
+
+/* CONTROLS */
+
+.controls{
+  display: flex;
+  padding: 12px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.controls div{
+  margin: 0px 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls i{
+  margin: 0px 4px;
+}
+
+.controls i:hover{
+  cursor: pointer;
+}
+
+.red-time{
+  color: red;
+  animation: color 1s linear infinite;
+}
+
+@keyframes color {
+  0%{color: red;}
+  80%{color: white}
+  100%{color: red;}
 }
